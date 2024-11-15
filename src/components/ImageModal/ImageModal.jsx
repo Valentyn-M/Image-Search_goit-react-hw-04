@@ -31,6 +31,8 @@ const ImageModal = ({ isActive, onClose, image }) => {
 			shouldCloseOnOverlayClick={true}
 			shouldCloseOnEsc={true}
 			style={customStyles}
+		// overlayClassName={s.overlayStyle}
+		// className={s.contentStyle}
 		>
 			<div className={s.wrapperStyle}>
 				<img

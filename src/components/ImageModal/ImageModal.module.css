@@ -1,3 +1,29 @@
+/* Стилi для overlay */
+/* .overlayStyle {
+	background-color: rgba(0, 0, 0, 0.75);
+} */
+
+/* Стилi для content */
+/* .contentStyle {
+	padding: 0;
+	border: 2px solid #fff;
+	top: 50%;
+	left: 50%;
+	right: auto;
+	bottom: auto;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	max-width: 90%;
+	max-height: 90%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+} 
+Працюють не корректно	
+*/
+
 .wrapperStyle {
 	display: flex;
 	align-items: center;

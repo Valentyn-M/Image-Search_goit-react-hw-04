@@ -4,7 +4,7 @@ import './index.css'
 import App from './components/App.jsx'
 import Modal from 'react-modal';
 
-// Установка кореневого елементу для бібліотеки React Modal.
+// Установка кореневого елемента для бібліотеки React Modal.
 Modal.setAppElement('#root');
 
 createRoot(document.getElementById('root')).render(
