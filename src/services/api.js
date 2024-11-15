@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_KEY = "cnkYICVKMOthXBDgWPDYfORxaISq_ht2OfHk6j-wGgU"; // TODO здерегти ключ окремо і не завантажувати на Гітхаб
+const API_KEY = "cnkYICVKMOthXBDgWPDYfORxaISq_ht2OfHk6j-wGgU"; // TODO зберегти ключ окремо і не завантажувати на Гітхаб (прзiбратися пiсля здачi)
 
 axios.defaults.baseURL = "https://api.unsplash.com//search/photos";
 

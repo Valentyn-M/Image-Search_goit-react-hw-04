@@ -7,10 +7,6 @@ import Loader from './Loader/Loader'
 import ErrorMessage from './ErrorMessage/ErrorMessage'
 import LoadMoreBtn from './LoadMoreBtn/LoadMoreBtn'
 import ImageModal from './ImageModal/ImageModal'
-// import Modal from 'react-modal';
-
-// // Установка кореневого елементу для бібліотеки React Modal.
-// Modal.setAppElement('#root');
 
 function App() {
 

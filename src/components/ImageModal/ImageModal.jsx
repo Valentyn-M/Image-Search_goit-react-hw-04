@@ -38,7 +38,20 @@ const ImageModal = ({ isActive, onClose, image }) => {
 					src={image.urls.regular}
 					alt={image.description ?? image.alt_description}
 				/>
-
+				<ul className={s.imageInfo}>
+					<li className={s.infoItem}>
+						<div className={s.infoTitle}>Author</div>
+						<div className={s.infoValue}>{image.user.name}</div>
+					</li>
+					<li className={s.infoItem}>
+						<div className={s.infoTitle}>Likes</div>
+						<div className={s.infoValue}>{image.likes}</div>
+					</li>
+					<li className={s.infoItem}>
+						<div className={s.infoTitle}>Description</div>
+						<div className={s.infoValue}>{image.description ?? image.alt_description}</div>
+					</li>
+				</ul>
 			</div>
 		</Modal>
 	);

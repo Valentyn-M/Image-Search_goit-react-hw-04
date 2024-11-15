@@ -4,6 +4,7 @@
 	justify-content: center;
 	width: 100%;
 	height: 100%;
+	flex-direction: column;
 }
 
 .imageStyle {
@@ -12,4 +13,28 @@
 	object-fit: contain;
 	margin: auto;
 	display: block;
+}
+
+.imageInfo {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	gap: 20px;
+	background-color: #fff;
+	position: absolute;
+	bottom: 0;
+}
+
+.infoItem {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.infoTitle {
+	font-weight: bold;
+}
+
+.infoValue {
+	line-height: 1.2;
 }
