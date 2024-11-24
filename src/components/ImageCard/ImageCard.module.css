@@ -6,11 +6,16 @@
 	transition: box-shadow 0.3s ease 0s;
 	border-radius: 3px;
 	overflow: hidden;
+	outline: none;
 
 	&:hover,
 	&:focus {
 		box-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
 		cursor: zoom-in;
+
+		.image {
+			transform: scale(1.1);
+		}
 	}
 }
 
@@ -21,4 +26,5 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	transition: transform 0.3s ease 0s;
 }
