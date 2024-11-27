@@ -24,43 +24,82 @@
 Працюють не корректно	
 */
 
-.wrapperStyle {
+.imageStyle {
+	max-width: 90vw;
+	max-height: 90vh;
+	object-fit: contain;
+}
+
+.desc {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	right: 15px;
+	max-width: fit-content;
+	background-color: #fff;
+	padding: 6px 8px;
+	border-radius: 4px;
+	opacity: 0.5;
+	line-height: 1.3;
+	transition: opacity 0.3s ease 0s;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.likes {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	background-color: #fff;
+	padding: 6px 8px;
+	border-radius: 4px;
+	opacity: 0.5;
+	transition: opacity 0.3s ease 0s;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	height: 100%;
-	flex-direction: column;
+	gap: 5px;
+
+	.likesIcon {
+		transition: color 0.3s ease 0s;
+		font-size: 18px;
+	}
+
+	&:hover {
+		opacity: 1;
+
+		.likesIcon {
+			color: #3700b3;
+		}
+	}
 }
 
-.imageStyle {
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
-	margin: auto;
-	display: block;
-}
-
-.imageInfo {
-	width: 100%;
-	padding: 10px;
-	display: flex;
-	gap: 20px;
-	background-color: #fff;
+.close {
 	position: absolute;
-	bottom: 0;
-}
-
-.infoItem {
+	top: 15px;
+	right: 15px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 3px;
+	opacity: 0.5;
+	transition: opacity 0.3s ease 0s;
 	display: flex;
-	flex-direction: column;
-	gap: 7px;
-}
+	align-items: center;
+	justify-content: center;
 
-.infoTitle {
-	font-weight: bold;
-}
+	.closeIcon {
+		font-size: 24px;
+		transition: color 0.3s ease 0s;
+	}
 
-.infoValue {
-	line-height: 1.2;
+	&:hover,
+	:focus {
+		opacity: 1;
+
+		.closeIcon {
+			color: #ff0266;
+		}
+	}
 }
